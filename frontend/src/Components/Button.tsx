@@ -1,13 +1,24 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import '../index.css';
 
+interface button{
+  title : string;
+  color : string;
+  fontWeight : string;
+  width : string; 
+  fontColor : string;
+}
 
-export default function Button(props:any) {
+export default function Button({title, color, fontWeight, width, fontColor}:button) {
   const classes = {
-    button: 'w-full flex justify-center py-2 px-4 border border-transparent text-lg font-medium rounded-md text-white bg-custom-black'
+    btn: `w-${width} m-5 py-2 px-4 border-2 border-slate-500 text-md font-${fontWeight} rounded-md text-${fontColor} bg-${color}`,
+    btnTitle: title
   }
+
   return (
-    <button className={classes.button}>{props.title}</button>
+    <button className={classes.btn}><FontAwesomeIcon icon={faCartShopping}/><span className='ml-2'>{classes.btnTitle}</span></button>
   )
 }
 
