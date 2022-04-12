@@ -3,7 +3,6 @@ import React from 'react';
 import Header from '../Components/Header';
 import CategoryBtn from '../Components/CategoryBtn';
 import Button from '../Components/Button';
-import thumbnail from '../Images/milktea.png';
 import ProductCard from '../Components/ProductCard';
 import Footer from '../Components/Footer';
 
@@ -71,26 +70,14 @@ function home() {
                 </div>
                 <hr className='mx-auto mb-5'/>
                 <div className='container mb-10'>
-                    <h1 className='text-2xl font-semibold ml-10 md:ml-20 mb-5'>Milktea</h1>
+                    <h1 className='text-2xl font-medium ml-10 md:ml-20 mb-5'>Milktea</h1>
                     <div className='flex overflow-x-scroll no-scrollbar'>
                         <div className='flex md:flex-wrap flex-nowrap md:ml-20 ml-10'>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                        </div>
-                    </div>
-                </div>
-                <div className='container mb-10'>
-                    <h1 className='text-2xl font-semibold ml-10 md:ml-20 mb-5'>Milktea</h1>
-                    <div className='flex overflow-x-scroll no-scrollbar'>
-                        <div className='flex md:flex-wrap flex-nowrap md:ml-20 ml-10'>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
+                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00' link='/item-details'/>
+                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00' link='#'/>
+                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00' link='#'/>
+                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00' link='#'/>
+                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00' link='#'/>
                         </div>
                     </div>
                 </div>
