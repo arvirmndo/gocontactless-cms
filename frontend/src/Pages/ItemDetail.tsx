@@ -6,7 +6,6 @@ import thumbnail from '../Images/milktea.png'
 export default function ItemDetail() {
   return (
     <div>
-        
         <main className = 'container'>
           <div id = "imgContainer" className = 'w-full'>
               <NavBackBtn />

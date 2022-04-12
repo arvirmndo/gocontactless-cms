@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Input extends Component {
-  render() {
+export default function Input() {
     return (
       <div>Input</div>
     )
-  }
 }
