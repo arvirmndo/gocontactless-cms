@@ -22,9 +22,9 @@ export default function Button({ title, color, fontWeight, width, fontColor, bor
   }
 
   return (
-    <button          className = { classes.btn }>
+    <button className = { classes.btn }>
     {/* <FontAwesomeIcon icon      = { faCartShopping }/> */}
-    <span            className = 'mx-2'>{classes.btnTitle}</span>
+    <span>{classes.btnTitle}</span>
     {/* <span            className = {classes.span}>9</span> */}
     </button>
   )
