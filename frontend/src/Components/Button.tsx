@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import '../index.css';
-import Modal from '../Components/modal';
+import Modal from './ItemDetailModal';
 
 interface buttonProps{
   title     : string;
