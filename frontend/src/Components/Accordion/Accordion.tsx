@@ -1,20 +1,20 @@
 import React, {useState} from 'react'
-import Input from '../Input';
 import AccordionLayout from './AccordionLayout/AccordionLayout'
 
 export default function Accordion() {
     const classes = {
-        mainDiv:"flex justify-between mb-4",
-        flexDiv: 'flex items-center',
-        input: 'w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600',
-        label: 'block ml-2 text-sm font-medium text-custom-black',
+        mainContainer: 'flex flex-col justify-center items-center',
+        mainDiv      : "flex justify-between mb-4",
+        flexDiv      : 'flex items-center',
+        input        : 'w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600',
+        label        : 'block ml-2 text-sm font-medium text-custom-black',
 
     }
 
     const [activeIndex, setActiveIndex] = useState(1);
 
     return (
-        <div className='flex flex-col justify-center items-center'>
+        <div className={classes.mainContainer}>
          <AccordionLayout 
             title     = "Size"
             isDefault = {true}
@@ -69,7 +69,8 @@ export default function Accordion() {
             title="Add-ons"
             isDefault={false}
           >
-            This is Accordion 2 Content    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus velit, quaerat, corporis neque, 
+            esse omnis alias id sunt veniam pariatur aliquam possimus aut sit! Dolorem optio distinctio autem accusantium assumenda.    
           </AccordionLayout>
       </div>
     )

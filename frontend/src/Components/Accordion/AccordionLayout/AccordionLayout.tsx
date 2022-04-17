@@ -13,7 +13,7 @@ export default function AccordionLayout({ title, children, isDefault}:AccordionL
         mainDiv : 'flex w-full justify-between p-2 mt-2 border-2 rounded-lg bg-white shadow-lg',
         titleDiv: 'flex px-2 text-custom-black font-bold',
         icon: 'flex items-center justify-center',
-        content: 'shadow-3xl w-full bg-white shadow-b-lg rounded-b-2xl shadow-cyan-500/50 p-4 mb-6 transition-all duration-500 ease-in-out'
+        content: 'shadow-3xl w-full bg-white shadow-b-lg rounded-b-2xl shadow-cyan-500/50 p-4 transition duration-150 ease-in-out'
     }
 
     const [showDetail, setShowDetail] = useState(isDefault);
@@ -28,7 +28,7 @@ export default function AccordionLayout({ title, children, isDefault}:AccordionL
 
     return (
         <>
-        <div onClick   = {() => handleShowDetail()}
+        <button onClick   = {() => handleShowDetail()}
              className = {classes.mainDiv}>
             <div className = {classes.titleDiv}>{title}</div>
             <div className = {classes.icon}>
@@ -38,7 +38,7 @@ export default function AccordionLayout({ title, children, isDefault}:AccordionL
                     : <FontAwesomeIcon icon={faAngleUp} className='w-8 h-8' />
                 }
             </div>
-        </div>
+        </button>
 
         {(showDetail === true) && (
             <div className={classes.content}>

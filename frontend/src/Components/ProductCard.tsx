@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import thumbnail from '../Images/milktea.png'
-import Modal from './ItemDetailModal'
+import ItemDetail from './ItemDetailModal'
 
 interface cardProps{
     productName: string;
@@ -11,7 +11,7 @@ interface cardProps{
 export default function ProductCard({productName, variant, price}:cardProps) {
     const [show, setShowModal] = useState(false);
     const classes = {
-        mainDiv : "max-w-sm w-48 md:w-64 md:pb-4 mr-4 mb-4 border shadow-lg rounded-lg",
+        mainDiv : "max-w-sm w-48 md:w-64 md:pb-4 mr-4 mb-4 border shadow-lg rounded-lg hover:scale-105 transition duration-150 ease-in-out",
         imgDiv : "w-full",
         imgRound: "rounded-t-lg",
         contentDiv : "px-5 py-4",
@@ -24,9 +24,9 @@ export default function ProductCard({productName, variant, price}:cardProps) {
     }
 
     return (
-        <div>
+        <>
             <div className = {classes.mainDiv}
-                onClick={modalClicked}>
+                 onClick   = {modalClicked}>
                 <div className = {classes.imgDiv}>
                     <img className = {classes.imgRound} src = {thumbnail} alt = "milktea" />
                 </div>
@@ -42,8 +42,8 @@ export default function ProductCard({productName, variant, price}:cardProps) {
                     </p>
                 </div>
             </div>
-            {show && <Modal setShowModal= {setShowModal} />}
+            {show && <ItemDetail setShowModal= {setShowModal} />}
             
-        </div>
+        </>
     )
 }
