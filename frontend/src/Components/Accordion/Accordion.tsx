@@ -2,61 +2,59 @@ import React, {useState} from 'react'
 import AccordionLayout from './AccordionLayout/AccordionLayout'
 
 export default function Accordion() {
-    const classes = {
+    const styles = {
         mainContainer: 'flex flex-col justify-center items-center',
         mainDiv      : "flex justify-between mb-4",
         flexDiv      : 'flex items-center',
         input        : 'w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600',
         label        : 'block ml-2 text-sm font-medium text-custom-black',
-
+        legend       : 'sr-only'
     }
 
-    const [activeIndex, setActiveIndex] = useState(1);
-
     return (
-        <div className={classes.mainContainer}>
+        <div className={styles.mainContainer}>
          <AccordionLayout 
             title     = "Size"
             isDefault = {true}
           >
                         
             <fieldset>
-                <legend className="sr-only">Size</legend>
-                <div className={classes.mainDiv}>
-                    <div className={classes.flexDiv}>
-                        <input id="option-1" type="radio" name="size" value="Small" className={classes.input} defaultChecked/>
-                        <label htmlFor="country-option-1" className={classes.label}>
+                <legend className={styles.legend}>Size</legend>
+                <div className={styles.mainDiv}>
+                    <div className={styles.flexDiv}>
+                        <input id="option-1" type="radio" name="size" value="Small" className={styles.input} defaultChecked/>
+                        <label htmlFor="country-option-1" className={styles.label}>
                         Small
                         </label>
                     </div>
-                    <div className={classes.flexDiv}>
-                        <label htmlFor="country-option-1" className={classes.label}>
+                    <div className={styles.flexDiv}>
+                        <label htmlFor="country-option-1" className={styles.label}>
                         + 0.00
                         </label>
                     </div>
                 </div>
-                <div className={classes.mainDiv}>
-                    <div className={classes.flexDiv}>
-                        <input id="option-1" type="radio" name="size" value="Medium" className={classes.input} defaultChecked/>
-                        <label htmlFor="country-option-1" className={classes.label}>
+                <div className={styles.mainDiv}>
+                    <div className={styles.flexDiv}>
+                        <input id="option-1" type="radio" name="size" value="Medium" className={styles.input} defaultChecked/>
+                        <label htmlFor="option-1" className={styles.label}>
                         Medium
                         </label>
                     </div>
-                    <div className={classes.flexDiv}>
-                        <label htmlFor="country-option-1" className={classes.label}>
+                    <div className={styles.flexDiv}>
+                        <label className={styles.label}>
                         + 10.00
                         </label>
                     </div>
                 </div>
-                <div className={classes.mainDiv}>
-                <div className={classes.flexDiv}>
-                        <input id="option-1" type="radio" name="size" value="Large" className={classes.input} defaultChecked/>
-                        <label htmlFor="country-option-1" className={classes.label}>
+                <div className={styles.mainDiv}>
+                <div className={styles.flexDiv}>
+                        <input id="option-1" type="radio" name="size" value="Large" className={styles.input} defaultChecked/>
+                        <label className={styles.label}>
                         Large
                         </label>
                     </div>
-                    <div className={classes.flexDiv}>
-                        <label htmlFor="country-option-1" className={classes.label}>
+                    <div className={styles.flexDiv}>
+                        <label className={styles.label}>
                         + 15.00
                         </label>
                     </div>

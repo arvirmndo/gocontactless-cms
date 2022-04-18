@@ -2,19 +2,18 @@ import '../App.css';
 import { useState } from 'react';
 import Header from '../Components/Header';
 import CategoryBtn from '../Components/CategoryBtn';
-import Button from '../Components/Button';
+import Button from '../Components/AppButton';
 import ProductCard from '../Components/ProductCard';
 import Footer from '../Components/Footer';
 import Cart from './Cart';
 import CashlessModal from './Cashless';
-import ItemDetail from '../Components/ItemDetailModal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 
 
 function Home() {
-    const classes = {
+    const styles = {
         divParent           : 'md:container mx-auto',
         viewCart            : 'flex justify-end m-5 lg:mt-10 lg:mr-20 relative inline-block',
         main                : 'container mb-40',
@@ -34,9 +33,9 @@ function Home() {
     }
     
     return (
-        <div className={classes.divParent}>
+        <div className={styles.divParent}>
             <Header />
-            <div className={classes.viewCart}>
+            <div className={styles.viewCart}>
                 <Button 
                     title          = "View Cart"
                     color          = "white"
@@ -52,10 +51,10 @@ function Home() {
                     <FontAwesomeIcon icon = { faCartShopping } className="mr-2"/>
                 </Button>
             </div>
-            <main className={classes.main}>
-                <h1 className={classes.categoryTitle}>Category</h1>
-                <div className={classes.slider}>
-                    <div className={classes.categoryWrapper}>
+            <main className={styles.main}>
+                <h1 className={styles.categoryTitle}>Category</h1>
+                <div className={styles.slider}>
+                    <div className={styles.categoryWrapper}>
                         <CategoryBtn 
                             title='All'
                             bgColor='custom-black'
@@ -79,11 +78,11 @@ function Home() {
                         />
                     </div>
                 </div>
-                <hr className={classes.hr}/>
-                <div className={classes.productContainer}>
-                    <h1 className={classes.productCategoryTitle}>Milktea</h1>
-                    <div className={classes.slider}>
-                        <div className={classes.productWrapper}>
+                <hr className={styles.hr}/>
+                <div className={styles.productContainer}>
+                    <h1 className={styles.productCategoryTitle}>Milktea</h1>
+                    <div className={styles.slider}>
+                        <div className={styles.productWrapper}>
                             <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
                         </div>
                     </div>

@@ -9,7 +9,7 @@ interface AccordionLayoutProps{
 }
 
 export default function AccordionLayout({ title, children, isDefault}:AccordionLayoutProps) {
-    const classes = {
+    const styles = {
         mainDiv : 'flex w-full justify-between p-2 mt-2 border-2 rounded-lg bg-white shadow-lg',
         titleDiv: 'flex px-2 text-custom-black font-bold',
         icon: 'flex items-center justify-center',
@@ -29,9 +29,9 @@ export default function AccordionLayout({ title, children, isDefault}:AccordionL
     return (
         <>
         <button onClick   = {() => handleShowDetail()}
-             className = {classes.mainDiv}>
-            <div className = {classes.titleDiv}>{title}</div>
-            <div className = {classes.icon}>
+             className = {styles.mainDiv}>
+            <div className = {styles.titleDiv}>{title}</div>
+            <div className = {styles.icon}>
                 {
                     (showDetail === true)
                     ? <FontAwesomeIcon icon={faAngleDown} className='w-8 h-8' />
@@ -41,7 +41,7 @@ export default function AccordionLayout({ title, children, isDefault}:AccordionL
         </button>
 
         {(showDetail === true) && (
-            <div className={classes.content}>
+            <div className={styles.content}>
             {children}
             </div>
         )}

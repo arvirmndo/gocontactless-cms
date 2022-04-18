@@ -10,7 +10,7 @@ interface cardProps{
 
 export default function ProductCard({productName, variant, price}:cardProps) {
     const [show, setShowModal] = useState(false);
-    const classes = {
+    const styles = {
         mainDiv : "max-w-sm w-48 md:w-64 md:pb-4 mr-4 mb-4 border shadow-lg rounded-lg hover:scale-105 transition duration-150 ease-in-out",
         imgDiv : "w-full",
         imgRound: "rounded-t-lg",
@@ -25,19 +25,19 @@ export default function ProductCard({productName, variant, price}:cardProps) {
 
     return (
         <>
-            <div className = {classes.mainDiv}
+            <div className = {styles.mainDiv}
                  onClick   = {modalClicked}>
-                <div className = {classes.imgDiv}>
-                    <img className = {classes.imgRound} src = {thumbnail} alt = "milktea" />
+                <div className = {styles.imgDiv}>
+                    <img className = {styles.imgRound} src = {thumbnail} alt = "milktea" />
                 </div>
-                <div className = {classes.contentDiv}>
-                    <p className = {classes.productName}>
+                <div className = {styles.contentDiv}>
+                    <p className = {styles.productName}>
                         {productName}
                     </p>
-                    <p className = {classes.variant}>
+                    <p className = {styles.variant}>
                         {variant}
                     </p>
-                    <p className = {classes.price}>
+                    <p className = {styles.price}>
                         {price}
                     </p>
                 </div>

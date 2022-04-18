@@ -8,12 +8,12 @@ interface navBackButtonProps{
 }
 
 export default function NavBackButton({onClick}: navBackButtonProps) {
-    const classes = {
+    const styles = {
         backBtn: 'absolute w-auto m-5 px-3 py-2 shadow-lg rounded-full bg-white hover:bg-gray-500 hover:text-white',
     }
     
   return (
-    <button className = {classes.backBtn} onClick={onClick} >
+    <button className = {styles.backBtn} onClick={onClick} >
         <FontAwesomeIcon icon = { faArrowLeft } className = "fa-lg"/>
     </button>
   )
