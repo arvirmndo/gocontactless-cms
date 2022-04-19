@@ -4,12 +4,12 @@ interface AppInputProps{
     type        : string;
     value       : any;
     placeholder?: string;
-    onChange?   : (event: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange?   : (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
 export default function AppInput({ type, value, placeholder, onChange}:AppInputProps) {
     const styles = {
-        input : 'border-2 border-gray-400 p-2 mt-2 font-regular text-sm rounded-lg'
+        input : 'border-2 border-gray-400 p-2 font-regular text-gray-800 text-sm rounded-lg w-full'
     }
 
     return (
@@ -21,6 +21,8 @@ export default function AppInput({ type, value, placeholder, onChange}:AppInputP
                     cols        = {30}
                     rows        = {4}
                     placeholder = "Type your notes here..."
+                    value       = {value}
+                    onChange    = {onChange}
                 />) 
             :   <input 
                     type        = {type}

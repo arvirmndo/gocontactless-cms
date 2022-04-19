@@ -1,4 +1,5 @@
 import '../App.css';
+import logo from '../Images/konichiwa.png'
 import { useState } from 'react';
 import Header from '../Components/Header';
 import CategoryBtn from '../Components/CategoryBtn';
@@ -20,7 +21,7 @@ function Home() {
         categoryTitle       : 'text-2xl md:text-center font-semibold ml-10 mb-5',
         slider              : 'flex overflow-x-scroll no-scrollbar',
         categoryWrapper     : 'flex md:flex-wrap flex-nowrap md:mx-auto ml-8',
-        hr                  : ' mb-5 mx-10',
+        hr                  : ' my-5',
         productContainer    : 'container mb-10',
         productCategoryTitle: 'text-2xl font-medium ml-10 md:ml-20 mb-5',
         productWrapper      : 'flex md:flex-wrap flex-nowrap md:ml-20 ml-10 py-4'
@@ -34,7 +35,10 @@ function Home() {
     
     return (
         <div className={styles.divParent}>
-            <Header />
+            <Header
+                image   = {logo}
+                bgColor = {"custom-black"}
+                type    = {"Store"}/>
             <div className={styles.viewCart}>
                 <Button 
                     title          = "View Cart"
@@ -76,6 +80,76 @@ function Home() {
                             hoverColor='gray-900'
                             hoverFontColor = 'white'
                         />
+                        <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        />
+                        <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        />
+                        <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        />
+                        <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        />
+                        <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        /><CategoryBtn 
+                        title='Siomai'
+                        bgColor='gray-300'
+                        fontColor='black'
+                        hoverColor='gray-900'
+                        hoverFontColor = 'white'
+                    />
+                    <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        />
+                        <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        />
+                        <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        />
+                        <CategoryBtn 
+                            title='Siomai'
+                            bgColor='gray-300'
+                            fontColor='black'
+                            hoverColor='gray-900'
+                            hoverFontColor = 'white'
+                        />
+                        
                     </div>
                 </div>
                 <hr className={styles.hr}/>
@@ -89,7 +163,7 @@ function Home() {
                 </div>
                 {show && <CashlessModal setShowModal = { setShowModal } />}
             </main>
-            <Footer/>
+            
         </div>
     );
 }
