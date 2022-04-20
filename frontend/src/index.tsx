@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path = "/" element = { <Marketplace/> }></Route>
+      <Route path = "/"         element = { <Marketplace/> }></Route>
       <Route path = "/store"    element = {<Home />} />  
     </Routes>
   </BrowserRouter>,

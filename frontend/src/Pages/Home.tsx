@@ -55,77 +55,50 @@ function Home() {
                     <FontAwesomeIcon icon = { faCartShopping } className="mr-2"/>
                 </Button>
             </div>
-            <main className={styles.main}>
-                <h1 className={styles.categoryTitle}>Category</h1>
-                <div className={styles.slider}>
-                    <div className={styles.categoryWrapper}>
+            <main className = {styles.main}>
+                <h1 className = {styles.categoryTitle}>Category</h1>
+                <div className = {styles.slider}>
+                    <div className = {styles.categoryWrapper}>
                         <CategoryBtn 
-                            title='All'
-                            bgColor='custom-black'
-                            fontColor='white'
-                            hoverColor='gray-900'
+                            title = 'All'
+                            bgColor = 'custom-black'
+                            fontColor = 'white'
+                            hoverColor = 'gray-900'
                             hoverFontColor = 'white'
                         />
                         <CategoryBtn 
-                            title='Milktea'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
+                            title = 'Milktea'
+                            bgColor = 'gray-300'
+                            fontColor = 'black'
+                            hoverColor = 'gray-900'
                             hoverFontColor = 'white'
                         />
                         <CategoryBtn 
-                            title='Siomai'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
-                            hoverFontColor = 'white'
-                        />
-                        <CategoryBtn 
-                            title='Siomai'
+                            title = 'Siomai'
                             bgColor='gray-300'
                             fontColor='black'
                             hoverColor='gray-900'
                             hoverFontColor = 'white'
                         />
                         <CategoryBtn 
-                            title='Siomai'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
+                            title = 'Siomai'
+                            bgColor = 'gray-300'
+                            fontColor = 'black'
+                            hoverColor = 'gray-900'
                             hoverFontColor = 'white'
                         />
                         <CategoryBtn 
-                            title='Siomai'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
+                            title = 'Siomai'
+                            bgColor = 'gray-300'
+                            fontColor = 'black'
+                            hoverColor = 'gray-900'
                             hoverFontColor = 'white'
                         />
                         <CategoryBtn 
-                            title='Siomai'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
-                            hoverFontColor = 'white'
-                        />
-                        <CategoryBtn 
-                            title='Siomai'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
-                            hoverFontColor = 'white'
-                        /><CategoryBtn 
-                        title='Siomai'
-                        bgColor='gray-300'
-                        fontColor='black'
-                        hoverColor='gray-900'
-                        hoverFontColor = 'white'
-                    />
-                    <CategoryBtn 
-                            title='Siomai'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
+                            title = 'Siomai'
+                            bgColor = 'gray-300'
+                            fontColor = 'black'
+                            hoverColor = 'gray-900'
                             hoverFontColor = 'white'
                         />
                         <CategoryBtn 
@@ -135,29 +108,15 @@ function Home() {
                             hoverColor='gray-900'
                             hoverFontColor = 'white'
                         />
-                        <CategoryBtn 
-                            title='Siomai'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
-                            hoverFontColor = 'white'
-                        />
-                        <CategoryBtn 
-                            title='Siomai'
-                            bgColor='gray-300'
-                            fontColor='black'
-                            hoverColor='gray-900'
-                            hoverFontColor = 'white'
-                        />
-                        
+                                                
                     </div>
                 </div>
-                <hr className={styles.hr}/>
-                <div className={styles.productContainer}>
-                    <h1 className={styles.productCategoryTitle}>Milktea</h1>
-                    <div className={styles.slider}>
-                        <div className={styles.productWrapper}>
-                            <ProductCard productName='Wintermelon' variant='Size: M/L' price='Php 99.00'/>
+                <hr className = {styles.hr}/>
+                <div className = {styles.productContainer}>
+                    <h1 className = {styles.productCategoryTitle}>Milktea</h1>
+                    <div className = {styles.slider}>
+                        <div className = {styles.productWrapper}>
+                            <ProductCard productName = 'Wintermelon' variant = 'Size: M/L' price = 'Php 99.00'/>
                         </div>
                     </div>
                 </div>

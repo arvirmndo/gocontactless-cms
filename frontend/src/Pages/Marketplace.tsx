@@ -135,7 +135,7 @@ export default function Marketplace() {
                     <div className={styles.storeWrapper}>
                         <StoreCard storeName = 'Jollibee'
                                    desc      = 'Jollibee is a family-centric brand that promotes family values and togetherness and espouses Filipino pride.'
-                                   link      = '#' 
+                                   link      = '/store' 
                                    image = {thumbnail}>
                             <CategoryBadge value = {"Restaurant"} />
                         </StoreCard>

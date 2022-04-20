@@ -33,37 +33,37 @@ export default function Modal({ setShowModal }:modalProp) {
     }
 
     return (
-        <div className={styles.mainContainer}>
-            <div className={styles.bg}></div>
+        <div className = {styles.mainContainer}>
+            <div className = {styles.bg}></div>
 
-            <div className={styles.modalContainer}>
+            <div className = {styles.modalContainer}>
                 
-                <div id = "imgContainer" className={styles.divImg}>
-                    <NavBackButton onClick={() => handleCancelClick()}/>
-                    <img className={styles.img} src={thumbnail} alt="milktea" />
+                <div id = "imgContainer" className = {styles.divImg}>
+                    <NavBackButton onClick = {() => handleCancelClick()}/>
+                    <img className = {styles.img} src = {thumbnail} alt = "milktea" />
                 </div>
 
                
-                <div className={styles.modalContent}>
-                    <div className={styles.contentDiv}>
+                <div className = {styles.modalContent}>
+                    <div className = {styles.contentDiv}>
                         {/* <!--Title--> */}
-                        <div className={styles.titleDiv}>
-                            <p className={styles.title}>Wintermelon Milktea</p>
+                        <div className = {styles.titleDiv}>
+                            <p className = {styles.title}>Wintermelon Milktea</p>
                         </div>
 
                         {/* <!--Details--> */}
-                        <p className={styles.details}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate.</p>
-                        <div className={styles.accordionDiv}>
+                        <p className = {styles.details}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate.</p>
+                        <div className = {styles.accordionDiv}>
                             <Accordion/>
                         </div>
                         
                     </div>
                     
                     {/* <!--Footer--> */}
-                    <div className={styles.footerDiv}>
-                        <div className={styles.qtyPriceDiv}>
+                    <div className = {styles.footerDiv}>
+                        <div className = {styles.qtyPriceDiv}>
                             <h1>Php 99.00</h1>
-                            <span className={styles.counterWidth}><NumberButton/></span>
+                            <span className = {styles.counterWidth}><NumberButton/></span>
                          </div>
                         <Button 
                             title          = "Add to Cart"

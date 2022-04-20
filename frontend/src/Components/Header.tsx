@@ -3,8 +3,8 @@ import '../index.css';
 
 interface HeaderProp{
     image? : any;
-    bgColor : string;
-    type : string; 
+    bgColor: string;
+    type   : string;
 }
 
 
@@ -25,11 +25,11 @@ export default function Header({ image, type, bgColor } : HeaderProp) {
           ? (
             <div className = 'flex flex-row items-center'>
               <div className = {styles.divImg}>
-                <img className={styles.img} src={image} alt="milktea" />
-              </div>
+              <img className = {styles.img} src = {image} alt = "milktea" />
+            </div>
               <div className = 'flex flex-col text-left'>
-                <h1 className = {styles.headingBold}>Konichiwa Restaurant</h1>
-                <h1 className = {styles.headingLight}>Online Ordering</h1>
+                <h1  className = {styles.headingBold}>Konichiwa Restaurant</h1>
+                <h1  className = {styles.headingLight}>Online Ordering</h1>
               </div>
             </div>
               
@@ -37,7 +37,7 @@ export default function Header({ image, type, bgColor } : HeaderProp) {
           : (
             <>
             <div className = {styles.divImg}>
-                <img className={styles.img} src={image} alt="milktea" />
+              <img className = {styles.img} src = {image} alt = "milktea" />
             </div>
             </>
           )

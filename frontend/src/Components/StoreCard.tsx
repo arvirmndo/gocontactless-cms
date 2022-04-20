@@ -20,7 +20,7 @@ export default function StoreCard({storeName, desc, link, image, children} : car
     }
     return (
         <a className = {styles.mainDiv}
-            href = "#">
+            href = {link}>
             <div className = {styles.imgDiv}>
                 <img className = {styles.imgRound} src = {image} alt = "milktea" />
             </div>

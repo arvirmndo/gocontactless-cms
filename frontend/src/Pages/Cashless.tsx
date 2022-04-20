@@ -9,9 +9,9 @@ interface modalProp{
 }
 
 export default function CashlessModal({ setShowModal }:modalProp) {
-    const[name, setName]           = useState("");
-    const[mobileNum, setMobileNum] = useState("");
-    const[email, setEmail]         = useState("");
+    const [name, setName]           = useState("");
+    const [mobileNum, setMobileNum] = useState("");
+    const [email, setEmail]         = useState("");
 
     const styles = {
         mainContainer   : "fixed w-full h-full top-0 left-0 flex items-center justify-center",
